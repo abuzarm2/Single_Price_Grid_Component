@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Single Price Grid Component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+  <script src="https:/cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          spacing: {
+            '128': '32rem', // Add a custom spacing utility with 128 units (32rem)
+          },
+          colors: {
+            Cyan: 'hsl(179, 62%, 43%)',
+            Bright_Yellow: 'hsl(71, 73%, 54%)',
+            Light_Gray: 'hsl(204, 43%, 93%)',
+            Grayish_Blue: 'hsl(218, 22%, 67%)',
+          },
+          screens:{
+            'sm': '375px',
+            'lg': '1440px',
+          }
+        },
+      },
+      variants: {},
+      plugins: [],
+    }
+    
+  </script>
+</head>
+<body>
+  <!-- Global container -->
+  <div class="bg-Light_Gray flex items-center justify-center min-h-screen rounded-lg">
+    <!-- outer container -->
+    <div class="flex flex-col text-white bg-white m-auto max-w-sm md:max-w-xl rounded-lg my-10">
+      <!-- Inner container 1 -->
+      <div class="m-4 p-4 space-y-3"> 
+        <h2 class="text-Cyan text-2xl font-bold">Join our community</h2>
+        <p class="text-Bright_Yellow text-xl font-bold" >30-day, hassle-free money back guarantee</p>
+        <p class="text-Grayish_Blue text-opacity-75">Gain access to our full library of tutorials along with expert code reviews. 
+          Perfect for any developers who are serious about honing their skills.</p>
+      </div>
+      <!-- Inner container 2 -->
+        <div class="flex flex-col md:flex-row md:h-80">
+          <!-- col 2 -->
+          <div class="flex-1 bg-Cyan p-8 space-y-4 md:rounded-bl-lg">
+            <p class="text-xl font-bold">
+              Monthly Subscription
+            </p>
+            <p class="text-4xl font-bold">
+              &dollar;29 <span class="ml-2 text-white font-light text-lg">per month</span>
+            </p>
+            <p class="font-light">
+              Full access for less than &dollar;1 a day
+            </p>
+            <button class="bg-Bright_Yellow w-full shadow-xl text-200 rounded-md">
+              <div class="m-3 text-center px-5 font-semibold">
+                Sign Up
+              </div>
+            </button>
+          </div>
+          <!-- col 3 -->
+          <div class="flex-1 bg-[#5AD8D6] p-8 md:p-6 md:pr-2 space-y-4 text-left rounded-b-lg md:rounded-b-none md:rounded-br-lg">
+            <p class="text-xl font-semibold">
+              Why Us
+            </p>
+            <p class="mr-5 pr-20 md:pr=2 md:mr-2 font-light">
+              Tutorials by industry experts
+              Peer &amp; expert code review
+              Coding exercises
+                Access to our GitHub repos
+                Community forum
+                Flashcard decks
+                New videos every week
+            </p>
+          </div>
+        </div>
+    </div>
+  </div>
+</body>
+</html>
